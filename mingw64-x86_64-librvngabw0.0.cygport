@@ -1,0 +1,16 @@
+CROSS_HOST="x86_64-w64-mingw32"
+inherit cross
+
+NAME="mingw64-x86_64-librvngabw0.0"
+VERSION=0.0.1
+RELEASE=1
+CATEGORY="Devel"
+SUMMARY="AbiWord document generator library for Win64 toolchain"
+DESCRIPTION="librvngabw is an AbiWord document generator for librevenge. It
+supports librevenge's text document interface and has a small interface to
+convert embedded spreadsheet in a table."
+HOMEPAGE="https://sourceforge.net/projects/librvngabw/"
+SRC_URI="mirror://sourceforge/librvngabw/librvngabw-${VERSION}.tar.xz"
+SRC_DIR="librvngabw-${VERSION}"
+
+CYGCONF_ARGS="--disable-docs --disable-werror"
